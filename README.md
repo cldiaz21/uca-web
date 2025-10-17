@@ -1,45 +1,114 @@
-# Getting Started with Create React App
+# UCA Asesorías Ambientales - Sitio Web Corporativo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sitio web profesional para UCA Asesorías Ambientales, especialistas en retiro, gestión y remediación de materiales con asbesto.
 
-## Available Scripts
+## 🚀 Características
 
-In the project directory, you can run:
+- ✨ Diseño moderno y responsivo
+- 🎨 Fondos con degradados y efectos visuales
+- 🧭 Navegación fluida con React Router
+- 📱 Totalmente responsive (móvil, tablet, desktop)
+- 🎯 Secciones claramente diferenciadas
+- 📧 Formulario de contacto integrado
+- 🖼️ Carrusel de clientes con navegación manual
+- ⚡ Optimizado para rendimiento
+
+## 📋 Requisitos Previos
+
+- Node.js (versión 14 o superior)
+- npm o yarn
+
+## 🛠️ Instalación
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/cldiaz21/uca-web.git
+cd uca-web
+```
+
+2. Instala las dependencias:
+```bash
+npm install --legacy-peer-deps
+```
+
+3. Copia el archivo de configuración:
+```bash
+cp .env.example .env
+```
+
+## 🎮 Scripts Disponibles
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ejecuta la aplicación en modo desarrollo.\
+Abre [http://localhost:3000](http://localhost:3000) para verla en el navegador.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ejecuta el runner de pruebas en modo interactivo.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Construye la aplicación para producción en la carpeta `build`.\
+Optimiza el build para el mejor rendimiento.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Estructura del Proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+uca-web/
+├── public/              # Archivos públicos
+├── src/
+│   ├── assets/         # Imágenes y recursos
+│   ├── components/     # Componentes React
+│   ├── styles/         # Archivos CSS
+│   ├── App.js         # Componente principal
+│   └── index.js       # Punto de entrada
+├── .env.example       # Plantilla de configuración
+├── .gitignore         # Archivos ignorados por Git
+└── package.json       # Dependencias del proyecto
+```
 
-### `npm run eject`
+## 🎨 Tecnologías Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React 18** - Framework principal
+- **React Router DOM** - Navegación entre páginas
+- **React Slick** - Carruseles
+- **Lucide React** - Iconos modernos
+- **Bootstrap 5** - Framework CSS
+- **React Bootstrap** - Componentes de Bootstrap para React
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌐 Despliegue
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+El proyecto está configurado para desplegarse automáticamente en Vercel cuando se hace push a la rama `main`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Variables de Entorno en Vercel
 
-## Learn More
+Asegúrate de configurar las siguientes variables de entorno en Vercel:
+
+```
+SKIP_PREFLIGHT_CHECK=true
+FAST_REFRESH=true
+GENERATE_SOURCEMAP=false
+```
+
+## 🔒 Seguridad
+
+- El archivo `.env` está excluido del repositorio
+- Las credenciales sensibles deben configurarse en el entorno de producción
+- Se recomienda usar `.env.example` como plantilla
+
+## 📝 Licencia
+
+© 2025 UCA Asesorías Ambientales. Todos los derechos reservados.
+
+## 👥 Contacto
+
+**UCA Asesorías Ambientales**  
+Especialistas en gestión ambiental y manejo de residuos peligrosos
+
+---
+
+Desarrollado con ❤️ por el equipo de UCA
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
