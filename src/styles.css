@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #d60000; /* Rojo corporativo UCA */
+  --secondary-color: #ffffff; /* Blanco */
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar a {
+  color: white !important;
+}
