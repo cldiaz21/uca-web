@@ -1,23 +1,43 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+// Página principal con todas las secciones
+function HomePage() {
+  return (
+    <main>
+      <Home />
+    </main>
+  );
+}
+
+// Página de Quiénes Somos
+function AboutPage() {
+  return (
+    <main>
+      <About />
+    </main>
+  );
+}
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Home />
-      <Services />
-      <About />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/quienes-somos" element={<AboutPage />} />
+        <Route path="/servicios" element={<main><Services /></main>} />
+        <Route path="/contacto" element={<main><Contact /></main>} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 

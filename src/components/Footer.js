@@ -1,14 +1,13 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-dark text-light text-center py-3">
-      <Container>
-        <p className="mb-0">
-          © {new Date().getFullYear()} UCA | Asesorías Ambientales | Todos los derechos reservados.
-        </p>
-      </Container>
+    <footer className="footer py-4">
+      <div className="container">
+        <p>&copy; 2025 UCA Asesorías Ambientales. Todos los derechos reservados.</p>
+      </div>
     </footer>
   );
-}
+};
+
+export default Footer;
